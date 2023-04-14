@@ -18,9 +18,7 @@ function App() {
   }
 
   function deleteItem(itemId) {
-    console.log("delete");
     setTodos(todos.filter((item) => item.id !== itemId));
-    //setTodos(newTodos);
   }
 
   return (

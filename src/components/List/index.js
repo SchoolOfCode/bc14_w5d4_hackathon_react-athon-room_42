@@ -5,8 +5,8 @@ import React from "react";
 function List(props) {
   return (
     <div>
-      <li>{props.text}</li>
       <button onClick={props.onClick}>Delete</button>
+      {props.text}
     </div>
   );
 }
