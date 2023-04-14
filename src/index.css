@@ -1,0 +1,78 @@
+*{
+  margin: 10px;
+  border: 10px;
+  background-color: #F4A5AE;
+  color: #3B429F;
+}
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+Input{
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #f5d7e3;
+}
+#addBtn{
+  border: none;
+  border-radius: 20px;
+  color: #3B429F;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#addBtn:hover{
+  background-color: #f5d7e3;
+  border: 1px solid black;
+}
+#deleteBtn{
+  border: none;
+  border-radius: 20px;
+  color: #3B429F;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#deleteBtn:hover{
+  background-color: #f5d7e3;
+  border: 1px solid black;
+}
+#upBtn{
+  border: none;
+  border-radius: 20px;
+  color: #3B429F;
+  background-color: transparent;
+}
+#upBtn:hover{
+  background-color: #f5d7e3;
+  border: 1px solid black;
+}
+#downBtn{
+  border: none;
+  border-radius: 20px;
+  color: #3B429F;
+  background-color: transparent;
+}
+#downBtn:hover{
+  background-color: #f5d7e3;
+  border: 1px solid black;
+}
+
+Button{
+  border: none;
+  border-radius: 20px;
+  background-color: #AA7DCE;
+  color: #3B429F;
+}
+Button:hover{
+  border: 1px solid black;
+  border-radius: 20px;
+  size: 2px;
+  background-color: #AA7DCE;
+  color: #3B429F;
+}
