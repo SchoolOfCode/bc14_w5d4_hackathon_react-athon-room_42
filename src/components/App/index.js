@@ -30,17 +30,18 @@ function App() {
   }
 
   function downItem(itemId) {
-    console.log("before", todos);
 
     const newTodos = [...todos];
+    let todoIndex = todos.findIndex((item) => item.id === itemId);
 
-    let item1 = newTodos[itemId];
-    let item2 = newTodos[itemId - 1];
+    if (todoIndex === todos.length - 1) { return; }
 
-    newTodos[itemId] = item2;
-    newTodos[itemId - 1] = item1;
+    let item1 = { ...newTodos[todoIndex] };
+    let item2 = { ...newTodos[todoIndex + 1] };
 
-    console.log("after", newTodos);
+    newTodos[todoIndex ] = item2;
+    newTodos[todoIndex + 1] = item1;
+
     setTodos(newTodos);
   }
 
