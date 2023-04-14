@@ -17,9 +17,9 @@ function App() {
     setTodos([...todos, newTodo]);
   }
 
-  function deleteItem() {
+  function deleteItem(itemId) {
     console.log("delete");
-    setTodos(todos.filter((item) => item.id !== item.id));
+    setTodos(todos.filter((item) => item.id !== itemId));
     //setTodos(newTodos);
   }
 
@@ -32,7 +32,15 @@ function App() {
       </div>
 
       {todos.map((item) => {
-        return <List key={item.id} text={item.text} onClick={deleteItem} />;
+        return (
+          <List
+            key={item.id}
+            text={item.text}
+            onClick={() => {
+              deleteItem(item.id);
+            }}
+          />
+        );
       })}
     </div>
   );
