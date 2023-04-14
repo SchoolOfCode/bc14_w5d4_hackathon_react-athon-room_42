@@ -5,21 +5,23 @@ import List from "../List";
 import Button from "../Button";
 
 function App() {
-  const [todos, setTodos] = React.useState([{ id: 1, text: "a todo item" }]);
+  const [todos, setTodos] = React.useState([]);
 
-  function addTodo(event)
-  {
-    let inputText = document.querySelector("input").value;
-    console.log(todos)
+  function addTodo() {
     const newTodo = {
       id: todos.length + 1,
-      text: inputText
+      text: document.querySelector("input").value,
     };
 
-   document.querySelector("input").value = "";
+    document.querySelector("input").value = "";
     setTodos([...todos, newTodo]);
   }
 
+  function deleteItem() {
+    console.log("delete");
+    setTodos(todos.filter((item) => item.id !== item.id));
+    //setTodos(newTodos);
+  }
 
   return (
     <div id="app">
@@ -30,7 +32,7 @@ function App() {
       </div>
 
       {todos.map((item) => {
-        return <List key={item.id} text={item.text} />;
+        return <List key={item.id} text={item.text} onClick={deleteItem} />;
       })}
     </div>
   );
