@@ -1,11 +1,8 @@
 import React from "react";
+import Button from "../Button";
 
 function Input() {
-  return (
-    <header>
-      <h1>Input goes here</h1>
-    </header>
-  );
+  return <input type="text" />;
 }
 
 export default Input;
