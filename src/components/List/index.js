@@ -5,9 +5,9 @@ import React from "react";
 function List(props) {
   return (
     <div>
-      <button onClick={props.onClick}>Delete</button>
-      <button onClick={props.upClick}>Up</button>
-      <button onClick={props.downClick}>Down</button>
+      <button onClick={props.onClick} id="deleteBtn">Delete</button>
+      <button onClick={props.upClick} id="upBtn">⬆️</button>
+      <button onClick={props.downClick} id="downBtn">⬇️</button>
 
       {props.text}
     </div>
