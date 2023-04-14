@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div id="app">
-      <h1>Hello</h1>
+      <h1>To Do List</h1>
       <div>
         <Input />
         <Button onClick={addTodo} />
